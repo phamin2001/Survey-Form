@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Survey Form</h1>
+        <p id="description" class="description text-center">
+          Please answer the followeing questions. The survey will be anonymous
+          and used for research purpose only.
+        </p>
+      </header>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email-label"
+            placeholder="Enter your Email"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="number" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number-label"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+
+        <div class="form-group">
+          <p>What is your education background?</p>
+          <select id="dropdown" name="education" class="form-control" required>
+            <option value="Diploma">High School Diploma</option>
+            <option value="Associate">Associate Digree</option>
+            <option value="Bachelor">Bachelor Degree</option>
+            <option value="Master">Master Degree</option>
+            <option value="PHD">PhD Degree</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>What is your specialty?</p>
+          <label>
+            <input
+              name="user-favorite"
+              value="Front-End"
+              type="radio"
+              class="input-radio"
+            />Front-End
+          </label>
+          <label>
+            <input
+              name="user-favorite"
+              value="Back-End"
+              type="radio"
+              class="input-radio"
+            />Back-End
+          </label>
+          <label>
+            <input
+              name="user-favorite"
+              value="API"
+              type="radio"
+              class="input-radio"
+            />API
+          </label>
+          <label>
+            <input
+              name="user-favorite"
+              value="Other"
+              type="radio"
+              class="input-radio"
+            />Other
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What is your goal?<span class="clue">(Check all that apply)</span>
+          </p>
+          <label>
+            <input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Front-End Projects
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="back-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Back-End Projects
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="api-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />API Projects
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="database-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Data Base Projects
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="python-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Python Projects
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="java-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Java Projects
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Add your opinions:</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Type here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="submit-button" id="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
